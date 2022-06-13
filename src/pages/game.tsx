@@ -70,21 +70,21 @@ export default function Game() {
     const winner = calculateWinner(history[stepNumber].squares)
 
     if (winner) {
-      setStatus('Winner' + winner)
+      setStatus('Winner: ' + winner)
     } else {
       setStatus('Next player: ' + (xIsNext ? 'X' : 'O'))
     }
   }, [stepNumber])
 
   return (
-    <div>
+    <div className="flex h-full flex-col items-center justify-start space-y-8">
       <Board
         squares={history[stepNumber].squares}
         onClick={(i: number) => handleClick(i)}
       />
-      <div className="history">
+      <div className="">
         <div className="text-4xl font-bold underline">{status}</div>
-        <ol>
+        <ol className="">
           {history.map((gameState, index) => {
             const desc =
               index === 0 ? 'Go to game start' : `Got to move # ${index}`

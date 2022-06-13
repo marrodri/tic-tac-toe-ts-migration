@@ -1,7 +1,7 @@
 export default function AboutThis() {
   return (
     <main style={{ padding: '1rem 0' }}>
-      <h3 className="leading-tight font-medium text-3xl mb-2 mt-0 text-blue-500">
+      <h3 className="font-medium leading-tight text-3xl mt-0 mb-2 text-blue-500">
         About This
       </h3>
       <p className="text-2xl">

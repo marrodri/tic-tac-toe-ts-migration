@@ -1,7 +1,9 @@
 export default function Resources() {
   return (
     <main>
-      <h3>Resources used for this website</h3>
+      <h3 className="font-medium leading-tight text-3xl mt-0 mb-2 text-blue-500">
+        Resources used for this website
+      </h3>
       <ul className="list-disc text-2xl">
         <li>
           <a
