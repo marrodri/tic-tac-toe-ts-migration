@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { calculateWinner, classNames } from '../utils/index'
+import { calculateWinner, classNames } from '../utils/util'
 import '../index.css'
 
 function Square(props: any) {

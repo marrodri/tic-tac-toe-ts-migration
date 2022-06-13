@@ -1,4 +1,4 @@
-import { classNames } from 'utils'
+import { classNames } from 'utils/util'
 
 type Size = 'small' | 'medium' | 'large'
 

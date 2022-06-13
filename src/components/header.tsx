@@ -10,6 +10,7 @@ export default function Header(){
 			<h2>
 				Please click on Game to start a game
 			</h2>
+			<NavBar/>
 		</div>
 	);
 }
@@ -18,9 +19,11 @@ function NavBar(){
 	return (
 		<div>
 			<nav>
-				<Link to="/game"></Link>
-				<Link to="/about"></Link>
-				<Link to="/resources"></Link>
+				<Link to="/game">Game</Link>
+				<p>|</p>
+				<Link to="/about">About This</Link>
+				<p>|</p>
+				<Link to="/resources">Resources</Link>
 			</nav>
 		</div>
 	);
